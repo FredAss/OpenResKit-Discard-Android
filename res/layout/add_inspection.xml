@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color_2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/inspMainSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/background_color_1"
+            android:orientation="vertical"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/inspNameLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Bezeichnung der Inspektion"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <EditText
+                android:id="@+id/inspNameTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/inspResponsibleSubjectLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Verantwortlicher Mitarbeiter"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <Spinner
+                android:id="@+id/inspResponsibleSubjectTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inspProductSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/background_color_1"
+            android:orientation="vertical"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/inspProductionItemLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Produktsuche"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <AutoCompleteTextView
+                android:id="@+id/inspProductionItemTV1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:completionHint="Name, Nummer, Beschreibung"
+                android:completionThreshold="1"
+                android:drawableRight="@drawable/action_search" />
+
+			<TextView
+			    android:id="@+id/selectedProdItemLbl"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="4dp"
+			    android:text="Gewähltes Produkt"
+			    android:textColor="@color/background_color_3"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <TextView
+                android:id="@+id/selectedProdItem"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+				android:layout_margin="6dp"
+                android:padding="6dp"
+				android:textColor="@color/background_color_1"
+			    android:background="@color/background_color_2"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/prodDateLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Produktionsdatum"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <LinearLayout
+                android:id="@+id/calLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/prodDateTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.1"
+                    android:paddingLeft="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageButton
+                    android:id="@+id/prodDatePicker"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.9"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/collections_go_to_today" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/prodShiftLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Produktionsschicht"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <Spinner
+                android:id="@+id/prodShiftTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inspDescriptionLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Beschreibung"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <EditText
+                android:id="@+id/inspDescriptionTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inspDetailsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/background_color_1"
+            android:orientation="vertical"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/inspTypeLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Inspektionstyp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <Spinner
+                android:id="@+id/inspTypeTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inspShiftLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Inspektionsschicht"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <Spinner
+                android:id="@+id/inspShiftTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/inspSampleSizeLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Stichprobengröße"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <EditText
+                android:id="@+id/inspSampleSizeTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/inspTotalAmountLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Gesamtmenge"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <EditText
+                android:id="@+id/inspTotalAmountTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/inspTotalAmountUnitLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Einheit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_color_3" />
+
+            <EditText
+                android:id="@+id/inspTotalAmountUnitTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+       </LinearLayout>
+</ScrollView>

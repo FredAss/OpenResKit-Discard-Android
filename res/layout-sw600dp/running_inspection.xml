@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/runningInspMainSection"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/background_color_1"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/runningInspNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/inspProductionItemTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ProductionItem"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/runningInspDateLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Inspektionsdatum"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/background_color_3" />
+
+        <TextView
+            android:id="@+id/runningInspDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inspectiondate"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/runningInspResponsibleSubjectLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Verantwortlicher Mitarbeiter"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/background_color_3" />
+
+        <TextView
+            android:id="@+id/runningInspResponsibleSubjectTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ResponsibleSubject"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/runningInspUnitLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Einheit"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/background_color_3" />
+
+        <TextView
+            android:id="@+id/runningInspUnitTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/runningInspAttributes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:verticalSpacing="4dp" >
+    </GridView>
+
+</LinearLayout>

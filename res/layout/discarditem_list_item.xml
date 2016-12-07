@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/discardImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/background_color_2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/no_image"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/inspAttrNumberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="#"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/inspAttrDescTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:text="Description" />
+
+</LinearLayout>

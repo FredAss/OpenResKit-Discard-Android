@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inspectionLayoutContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color_3"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/inspectionListHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:paddingBottom="6dp"
+        android:paddingLeft="6dp"
+        android:paddingTop="6dp"
+        android:text="Prüfungen"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/addInspectionButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/inspectionListHeader"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right|center_vertical"
+        android:background="@color/drag_active_color"
+        android:gravity="center"
+        android:text="+" />
+
+    <ListView
+        android:id="@+id/seriesListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/inspectionListHeader"
+        android:background="@color/background_color_1" >
+    </ListView>
+
+</RelativeLayout>

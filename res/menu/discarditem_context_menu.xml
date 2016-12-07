@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/showDiscardItemInfo" android:titleCondensed="Infos" android:title="Informationen Anzeigen" android:icon="@drawable/action_about"></item><item android:id="@+id/takePicture" android:titleCondensed="Foto" android:title="Bild aufnehmen" android:icon="@drawable/device_access_camera"></item>
+    <item android:id="@+id/editDescription" android:titleCondensed="Beschreibung" android:title="Beschreibung bearbeiten" android:icon="@drawable/collections_view_as_list"></item>
+    
+    <item android:id="@+id/editQuantity" android:title="Anzahl korrigieren"></item>
+</menu>

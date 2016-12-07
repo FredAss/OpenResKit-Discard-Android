@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/openInspection" android:title="Inspektion aktivieren"></item>
+    <item android:id="@+id/copyInspection" android:titleCondensed="Kopieren" android:title="Kopieren"></item>
+    
+
+</menu>

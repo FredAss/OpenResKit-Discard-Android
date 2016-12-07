@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/discardItemInfoImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/noImageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:alpha="0.9"
+        android:background="@color/background_color_1"
+        android:padding="10dp"
+        android:text="kein Bild vorhanden"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/discardItemInfoHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/discardItemInfoText"
+        android:layout_marginLeft="20dp"
+        android:alpha="0.9"
+        android:background="@color/background_color_1"
+        android:padding="3dp"
+        android:text="Beschreibung" />
+
+    <TextView
+        android:id="@+id/discardItemInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.9"
+        android:background="@color/background_color_1"
+        android:padding="6dp"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+</RelativeLayout>

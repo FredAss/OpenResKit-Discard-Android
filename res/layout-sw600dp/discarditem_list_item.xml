@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:background="@color/drag_active_color" >
+
+    <ImageView
+        android:id="@+id/discardImage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/background_color_2"
+        android:maxHeight="200dp"
+        android:minHeight="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/no_image"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/longPressNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:alpha="0.9"
+        android:background="@color/background_color_1"
+        android:padding="10dp"
+        android:text="Lang drücken um Bild hinzuzufügen"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/inspAttrNumberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:alpha="0.9"
+        android:background="@color/background_color_1"
+        android:padding="10dp"
+        android:text="#"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/inspAttrDescTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.9"
+        android:background="@color/background_color_1"
+        android:padding="10dp"
+        android:text="Description"
+        android:textSize="16sp" />
+
+</RelativeLayout>

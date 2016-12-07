@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/textItem1"
+        style="@style/TableItem"
+        android:layout_width="30dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textItem2"
+        style="@style/TableItem"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textItem3"
+        style="@style/TableItem"
+        android:layout_width="30dp"
+        android:text="" />
+
+</TableRow>
